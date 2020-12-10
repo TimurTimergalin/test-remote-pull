@@ -12,6 +12,10 @@ def print_num():
 @app.route('/pull')
 def pull():
     os.system("git pull")
+    try:
+        exit(0)
+    finally:
+        os.system("python main.py")
     return "OK"
 
 
