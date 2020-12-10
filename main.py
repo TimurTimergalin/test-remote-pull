@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def print_num():
-    return "1"
+    return "2"
 
 
 @app.route('/pull')
